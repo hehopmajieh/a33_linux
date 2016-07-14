@@ -1,0 +1,83 @@
+#!/bin/sh
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs none /dev
+for parm in $(cat /proc/cmdline); do
+	case $parm in
+	ramfs)
+		RAMFS_MODE=1
+		;;
+	root=*)
+kp_out7 = port:PH27<4><1><default><default>
+		ROOT_DEVICE=`echo $parm | awk -F\= '{print $2}'`
+		;;
+	esac
+done
+
+if [ "$ROOT_DEVICE" = "" ]; then
+	echo "default boot type"
+	ROOT_DEVICE=autoconfig
+fi
+
+case $ROOT_DEVICE in
+	/dev/nand*)
+		insmod /lib/modules/`uname -r`/nand.ko
+		while true; do
+			if [ -b "/dev/nandd" ]; then
+				break
+			fi
+			echo "wait /dev/nandd ready"
+			sleep 1
+		done
+		e2fsck -y /dev/nandd
+		mount -o rw,noatime,nodiratime,norelatime,noauto_da_alloc,barrier=0,data=ordered  -t ext4 /dev/nandd /mnt
+		;;
+	/dev/mmc*)
+		while true; do
+			if [ -b "/dev/mmcblk0p1" ]; then
+				break
+			fi
+			echo "wait /dev/mmcblk0p1 ready"
+			sleep 1
+		done
+		e2fsck -y /dev/mmcblk0p1
+		mount -o rw,noatime,nodiratime,norelatime,noauto_da_alloc,barrier=0,data=ordered -t ext4 /dev/mmcblk0p1 /mnt
+		;;
+	autoconfig*)
+		sleep 1;
+        if cat /proc/partitions|grep "mmcblk0p1" >/dev/null;then 
+            magic_num=$(hexdump -s 1292 -n 2 -x /dev/mmcblk0p1|head -1|awk '{print $2 }')
+            if echo $magic_num|grep "f30a" >/dev/null;then
+                echo try switch to card
+                while true; do
+                    if [ -b "/dev/mmcblk0p1" ]; then
+                        break
+                    fi
+                    echo "wait /dev/mmcblk0p1 ready"
+                    sleep 1
+                done
+                e2fsck -y /dev/mmcblk0p1
+                mount -o rw,noatime,nodiratime,norelatime,noauto_da_alloc,barrier=0,data=ordered -t ext4 /dev/mmcblk0p1 /mnt
+            fi
+        else
+            echo load nand driver
+            insmod /lib/modules/`uname -r`/nand.ko
+            sleep 5
+            if cat /proc/partitions|grep "nandd" >/dev/null;then         
+                magic_num=$(hexdump -s 1292 -n 2 -x /dev/nandd|head -1|awk '{print $2 }')
+                if echo $magic_num|grep "f30a" >/dev/null;then
+                    echo try switch to nand
+                    e2fsck -y /dev/nandd
+                    mount -o rw,noatime,nodiratime,norelatime,noauto_da_alloc,barrier=0,data=ordered  -t ext4 /dev/nandd /mnt
+                fi
+            fi
+        fi
+		;;
+	*)
+		echo "default boot type"
+		;;  
+esac
+
+[ -x /mnt/init ] && exec switch_root /mnt /init
+/sbin/getty -L ttyS0 115200 vt100 -n -l /bin/ash

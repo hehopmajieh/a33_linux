@@ -1,0 +1,258 @@
+kernel/crypto/crypto_user.ko:
+kernel/crypto/michael_mic.ko:
+kernel/crypto/af_alg.ko:
+kernel/crypto/algif_hash.ko: kernel/crypto/af_alg.ko
+kernel/crypto/algif_skcipher.ko: kernel/crypto/af_alg.ko
+kernel/crypto/algif_rng.ko: kernel/crypto/af_alg.ko
+kernel/drivers/video/console/fbcon.ko: kernel/drivers/video/console/bitblit.ko kernel/drivers/video/console/softcursor.ko kernel/drivers/video/console/font.ko
+kernel/drivers/video/console/bitblit.ko: kernel/drivers/video/console/softcursor.ko
+kernel/drivers/video/console/font.ko:
+kernel/drivers/video/console/softcursor.ko:
+kernel/drivers/video/backlight/lcd.ko:
+kernel/drivers/video/backlight/backlight.ko:
+kernel/drivers/video/backlight/generic_bl.ko: kernel/drivers/video/backlight/backlight.ko
+kernel/drivers/block/loop.ko:
+kernel/drivers/scsi/scsi_wait_scan.ko:
+kernel/drivers/net/wireless/hostap/hostap.ko: kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko:
+kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko:
+kernel/drivers/net/wireless/rtlwifi/rtl8192cu/rtl8192cu.ko: kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko
+kernel/drivers/net/wireless/rtl8188eu/8188eu.ko:
+kernel/drivers/net/wireless/rtl8189es/8189es.ko:
+kernel/drivers/net/wireless/rtl8723bs/8723bs.ko:
+kernel/drivers/net/wireless/zd1201.ko:
+kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko: kernel/drivers/leds/led-class.ko
+kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko: kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/drivers/leds/led-class.ko
+kernel/drivers/net/wireless/rt2x00/rt2800lib.ko: kernel/lib/crc-ccitt.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/drivers/leds/led-class.ko
+kernel/drivers/net/wireless/rt2x00/rt2500usb.ko: kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/drivers/leds/led-class.ko
+kernel/drivers/net/wireless/rt2x00/rt73usb.ko: kernel/lib/crc-itu-t.ko kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/drivers/leds/led-class.ko
+kernel/drivers/net/wireless/rt2x00/rt2800usb.ko: kernel/drivers/net/wireless/rt2x00/rt2800lib.ko kernel/lib/crc-ccitt.ko kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/drivers/leds/led-class.ko
+kernel/drivers/net/wireless/bcmdhd/bcmdhd.ko:
+kernel/drivers/net/mii.ko:
+kernel/drivers/net/usb/catc.ko:
+kernel/drivers/net/usb/kaweth.ko:
+kernel/drivers/net/usb/pegasus.ko: kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/rtl8150.ko:
+kernel/drivers/net/usb/asix.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/qf9700.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/cdc_ether.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/smsc75xx.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/smsc95xx.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/net1080.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/cdc_subset.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/zaurus.ko: kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/usbnet.ko: kernel/drivers/net/mii.ko
+kernel/drivers/net/usb/cdc_ncm.ko: kernel/drivers/net/usb/usbnet.ko kernel/drivers/net/mii.ko
+kernel/drivers/usb/serial/cp210x.ko:
+kernel/drivers/usb/serial/ftdi_sio.ko:
+kernel/drivers/usb/class/cdc-acm.ko:
+kernel/drivers/input/keyboard/sunxi-keyboard.ko:
+kernel/drivers/input/touchscreen/ft5x/ft5x_ts.ko:
+kernel/drivers/input/misc/ltr_501als.ko:
+kernel/drivers/input/sw-device.ko:
+kernel/drivers/media/common/tuners/tuner-xc2028.ko:
+kernel/drivers/media/common/tuners/tuner-simple.ko: kernel/drivers/media/common/tuners/tuner-types.ko
+kernel/drivers/media/common/tuners/tuner-types.ko:
+kernel/drivers/media/common/tuners/mt20xx.ko:
+kernel/drivers/media/common/tuners/tda8290.ko: kernel/drivers/media/common/tuners/tda827x.ko kernel/drivers/media/common/tuners/tda18271.ko
+kernel/drivers/media/common/tuners/tea5767.ko:
+kernel/drivers/media/common/tuners/tea5761.ko:
+kernel/drivers/media/common/tuners/tda9887.ko:
+kernel/drivers/media/common/tuners/tda827x.ko:
+kernel/drivers/media/common/tuners/tda18271.ko:
+kernel/drivers/media/common/tuners/xc5000.ko:
+kernel/drivers/media/common/tuners/xc4000.ko:
+kernel/drivers/media/common/tuners/mt2060.ko:
+kernel/drivers/media/common/tuners/mt2063.ko:
+kernel/drivers/media/common/tuners/mt2266.ko:
+kernel/drivers/media/common/tuners/qt1010.ko:
+kernel/drivers/media/common/tuners/mt2131.ko:
+kernel/drivers/media/common/tuners/mxl5005s.ko:
+kernel/drivers/media/common/tuners/mxl5007t.ko:
+kernel/drivers/media/common/tuners/mc44s803.ko:
+kernel/drivers/media/common/tuners/max2165.ko:
+kernel/drivers/media/common/tuners/tda18218.ko:
+kernel/drivers/media/common/tuners/tda18212.ko:
+kernel/drivers/media/video/videodev.ko:
+kernel/drivers/media/video/v4l2-int-device.ko:
+kernel/drivers/media/video/v4l2-common.ko: kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/tuner.ko: kernel/drivers/media/common/tuners/xc4000.ko kernel/drivers/media/common/tuners/tea5761.ko kernel/drivers/media/common/tuners/mt20xx.ko kernel/drivers/media/common/tuners/tuner-simple.ko kernel/drivers/media/common/tuners/tuner-types.ko kernel/drivers/media/common/tuners/tda9887.ko kernel/drivers/media/common/tuners/xc5000.ko kernel/drivers/media/common/tuners/tuner-xc2028.ko kernel/drivers/media/common/tuners/tda8290.ko kernel/drivers/media/common/tuners/tda827x.ko kernel/drivers/media/common/tuners/tda18271.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/common/tuners/tea5767.ko
+kernel/drivers/media/video/saa7115.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/msp3400.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/cs53l32a.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/wm8775.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/cx25840/cx25840.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/tveeprom.ko:
+kernel/drivers/media/video/em28xx/em28xx.ko: kernel/drivers/media/video/tveeprom.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/tlg2300/poseidon.ko: kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/cx231xx/cx231xx.ko: kernel/drivers/media/video/cx2341x.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/pvrusb2/pvrusb2.ko: kernel/drivers/media/dvb/frontends/lgdt330x.ko kernel/drivers/media/dvb/frontends/tda10048.ko kernel/drivers/media/dvb/frontends/s5h1411.ko kernel/drivers/media/dvb/frontends/s5h1409.ko kernel/drivers/media/video/cx2341x.ko kernel/drivers/media/video/tveeprom.ko kernel/drivers/media/common/tuners/tuner-simple.ko kernel/drivers/media/common/tuners/tuner-types.ko kernel/drivers/media/common/tuners/tda8290.ko kernel/drivers/media/common/tuners/tda827x.ko kernel/drivers/media/common/tuners/tda18271.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/cpia2/cpia2.ko: kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/tm6000/tm6000.ko: kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/videobuf-core.ko:
+kernel/drivers/media/video/videobuf-dma-contig.ko: kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/videobuf-vmalloc.ko: kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/videobuf-dvb.ko: kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/videobuf2-core.ko:
+kernel/drivers/media/video/videobuf2-memops.ko:
+kernel/drivers/media/video/videobuf2-vmalloc.ko: kernel/drivers/media/video/videobuf2-memops.ko
+kernel/drivers/media/video/cx2341x.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/zr364xx.ko: kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/stkwebcam.ko: kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/et61x251/et61x251.ko: kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/pwc/pwc.ko: kernel/drivers/media/video/videobuf2-vmalloc.ko kernel/drivers/media/video/videobuf2-memops.ko kernel/drivers/media/video/videobuf2-core.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/gspca/gspca_main.ko: kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/hdpvr/hdpvr.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/s2255drv.ko: kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/uvc/uvcvideo.ko: kernel/drivers/media/video/videobuf2-vmalloc.ko kernel/drivers/media/video/videobuf2-memops.ko kernel/drivers/media/video/videobuf2-core.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/ir-kbd-i2c.ko:
+kernel/drivers/media/video/sunxi-vfe/vfe_os.ko:
+kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko: kernel/drivers/media/video/sunxi-vfe/vfe_os.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov5640.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov2640.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov7736.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/s5k4ec.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/s5k4ec_mipi.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc2035.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gt2005.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc0307.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc0308.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc0309.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc0328.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc0329.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc0311.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/hi253.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/sp2518.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/sp2519.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/sp0718.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/sp0838.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov16825.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov5650.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov5647.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov5647_mipi.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/t8et5.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/s5k4e1.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/s5k4e1_mipi.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc5004.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc5004_mipi.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov5648.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ar0330.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/sp5408.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov12830.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov8825.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov8850.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/gc2155.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov8858.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov13850.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/device/ov8858_4lane.ko: kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/actuator/actuator.ko:
+kernel/drivers/media/video/sunxi-vfe/actuator/ad5820_act.ko: kernel/drivers/media/video/sunxi-vfe/actuator/actuator.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/actuator/dw9714_act.ko: kernel/drivers/media/video/sunxi-vfe/actuator/actuator.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/actuator/ov8825_act.ko: kernel/drivers/media/video/sunxi-vfe/actuator/actuator.ko kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/csi_cci/cci.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/video/sunxi-vfe/vfe_v4l2.ko: kernel/drivers/media/video/videobuf-dma-contig.ko kernel/drivers/media/video/sunxi-vfe/vfe_subdev.ko kernel/drivers/media/video/sunxi-vfe/vfe_os.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/dvb/frontends/dvb-pll.ko:
+kernel/drivers/media/dvb/frontends/stv0299.ko:
+kernel/drivers/media/dvb/frontends/stb0899.ko:
+kernel/drivers/media/dvb/frontends/stb6100.ko:
+kernel/drivers/media/dvb/frontends/sp8870.ko:
+kernel/drivers/media/dvb/frontends/cx22700.ko:
+kernel/drivers/media/dvb/frontends/s5h1432.ko:
+kernel/drivers/media/dvb/frontends/cx24110.ko:
+kernel/drivers/media/dvb/frontends/tda8083.ko:
+kernel/drivers/media/dvb/frontends/l64781.ko:
+kernel/drivers/media/dvb/frontends/dib3000mb.ko:
+kernel/drivers/media/dvb/frontends/dib3000mc.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/frontends/dibx000_common.ko:
+kernel/drivers/media/dvb/frontends/dib7000m.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/frontends/dib7000p.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/frontends/dib8000.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/frontends/dib9000.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/frontends/mt312.ko:
+kernel/drivers/media/dvb/frontends/ves1820.ko:
+kernel/drivers/media/dvb/frontends/ves1x93.ko:
+kernel/drivers/media/dvb/frontends/tda1004x.ko:
+kernel/drivers/media/dvb/frontends/sp887x.ko:
+kernel/drivers/media/dvb/frontends/nxt6000.ko:
+kernel/drivers/media/dvb/frontends/mt352.ko:
+kernel/drivers/media/dvb/frontends/zl10036.ko:
+kernel/drivers/media/dvb/frontends/zl10039.ko:
+kernel/drivers/media/dvb/frontends/zl10353.ko:
+kernel/drivers/media/dvb/frontends/cx22702.ko:
+kernel/drivers/media/dvb/frontends/drxd.ko:
+kernel/drivers/media/dvb/frontends/tda10021.ko:
+kernel/drivers/media/dvb/frontends/tda10023.ko:
+kernel/drivers/media/dvb/frontends/stv0297.ko:
+kernel/drivers/media/dvb/frontends/nxt200x.ko:
+kernel/drivers/media/dvb/frontends/or51211.ko:
+kernel/drivers/media/dvb/frontends/or51132.ko:
+kernel/drivers/media/dvb/frontends/bcm3510.ko:
+kernel/drivers/media/dvb/frontends/s5h1420.ko:
+kernel/drivers/media/dvb/frontends/lgdt330x.ko:
+kernel/drivers/media/dvb/frontends/lgdt3305.ko:
+kernel/drivers/media/dvb/frontends/cx24123.ko:
+kernel/drivers/media/dvb/frontends/lnbp21.ko:
+kernel/drivers/media/dvb/frontends/lnbp22.ko:
+kernel/drivers/media/dvb/frontends/isl6405.ko:
+kernel/drivers/media/dvb/frontends/isl6421.ko:
+kernel/drivers/media/dvb/frontends/tda10086.ko:
+kernel/drivers/media/dvb/frontends/tda826x.ko:
+kernel/drivers/media/dvb/frontends/tda8261.ko:
+kernel/drivers/media/dvb/frontends/dib0070.ko:
+kernel/drivers/media/dvb/frontends/dib0090.ko:
+kernel/drivers/media/dvb/frontends/tua6100.ko:
+kernel/drivers/media/dvb/frontends/s5h1409.ko:
+kernel/drivers/media/dvb/frontends/itd1000.ko:
+kernel/drivers/media/dvb/frontends/au8522.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko
+kernel/drivers/media/dvb/frontends/tda10048.ko:
+kernel/drivers/media/dvb/frontends/cx24113.ko:
+kernel/drivers/media/dvb/frontends/s5h1411.ko:
+kernel/drivers/media/dvb/frontends/lgs8gl5.ko:
+kernel/drivers/media/dvb/frontends/tda665x.ko:
+kernel/drivers/media/dvb/frontends/lgs8gxx.ko:
+kernel/drivers/media/dvb/frontends/atbm8830.ko:
+kernel/drivers/media/dvb/frontends/af9013.ko:
+kernel/drivers/media/dvb/frontends/cx24116.ko:
+kernel/drivers/media/dvb/frontends/si21xx.ko:
+kernel/drivers/media/dvb/frontends/stv0288.ko:
+kernel/drivers/media/dvb/frontends/stb6000.ko:
+kernel/drivers/media/dvb/frontends/s921.ko:
+kernel/drivers/media/dvb/frontends/stv6110.ko:
+kernel/drivers/media/dvb/frontends/stv0900.ko:
+kernel/drivers/media/dvb/frontends/stv090x.ko:
+kernel/drivers/media/dvb/frontends/stv6110x.ko:
+kernel/drivers/media/dvb/frontends/isl6423.ko:
+kernel/drivers/media/dvb/frontends/ec100.ko:
+kernel/drivers/media/dvb/frontends/hd29l2.ko:
+kernel/drivers/media/dvb/frontends/ds3000.ko:
+kernel/drivers/media/dvb/frontends/mb86a16.ko:
+kernel/drivers/media/dvb/frontends/mb86a20s.ko:
+kernel/drivers/media/dvb/frontends/ix2505v.ko:
+kernel/drivers/media/dvb/frontends/stv0367.ko:
+kernel/drivers/media/dvb/frontends/cxd2820r.ko:
+kernel/drivers/media/dvb/frontends/drxk.ko:
+kernel/drivers/media/dvb/frontends/tda18271c2dd.ko:
+kernel/drivers/media/dvb/frontends/it913x-fe.ko:
+kernel/drivers/media/dvb/frontends/a8293.ko:
+kernel/drivers/media/dvb/frontends/tda10071.ko:
+kernel/drivers/media/dvb/frontends/rtl2830.ko:
+kernel/drivers/media/dvb/frontends/m88rs2000.ko:
+kernel/drivers/bluetooth/hci_vhci.ko:
+kernel/drivers/bluetooth/hci_uart.ko:
+kernel/drivers/bluetooth/bcm203x.ko:
+kernel/drivers/bluetooth/bpa10x.ko:
+kernel/drivers/bluetooth/bfusb.ko:
+kernel/drivers/bluetooth/btusb.ko:
+kernel/drivers/bluetooth/btsdio.ko:
+kernel/drivers/bluetooth/ath3k.ko:
+kernel/drivers/bluetooth/btmrvl.ko:
+kernel/drivers/bluetooth/rtl_bluesleep.ko:
+kernel/drivers/leds/led-class.ko:
+kernel/drivers/crypto/sunxi/ss.ko:
+kernel/drivers/hid/hid-logitech-dj.ko:
+kernel/net/wireless/lib80211.ko:
+kernel/net/wireless/lib80211_crypt_wep.ko: kernel/net/wireless/lib80211.ko
+kernel/net/wireless/lib80211_crypt_ccmp.ko: kernel/net/wireless/lib80211.ko
+kernel/net/wireless/lib80211_crypt_tkip.ko: kernel/net/wireless/lib80211.ko
+kernel/lib/crc-ccitt.ko:
+kernel/lib/crc-itu-t.ko:
