@@ -96,7 +96,7 @@ static struct snd_soc_card snd_soc_sunxi_sndpcm = {
 
 static struct platform_device *sunxi_sndpcm_device;
 
-static int __init sunxi_sndpcm_init(void)
+static int  sunxi_sndpcm_init(void)
 {
 	int ret = 0;
 
@@ -112,7 +112,7 @@ static int __init sunxi_sndpcm_init(void)
 	return ret;
 }
 
-static void __exit sunxi_sndpcm_exit(void)
+static void  sunxi_sndpcm_exit(void)
 {
 	platform_device_unregister(sunxi_sndpcm_device);
 }

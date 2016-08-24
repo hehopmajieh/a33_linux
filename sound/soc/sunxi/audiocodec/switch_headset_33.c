@@ -36,7 +36,7 @@
 #include <mach/platform.h>
 
 #undef SWITCH_DBG
-#if (0)
+#if (1)
     #define SWITCH_DBG(format,args...)  printk("[SWITCH] "format,##args)
 #else
     #define SWITCH_DBG(...)

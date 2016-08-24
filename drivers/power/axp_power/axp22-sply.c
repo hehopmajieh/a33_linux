@@ -38,7 +38,7 @@
 #include "axp-cfg.h"
 #include "axp22-sply.h"
 
-#define DBG_AXP_PSY 1
+#define DBG_AXP_PSY 0
 #if  DBG_AXP_PSY
 #define DBG_PSY_MSG(format,args...)   printk("[AXP]"format,##args)
 #else
@@ -107,6 +107,7 @@ int axp_usb_det(void)
 		return ret;
 	}
 	axp_read(axp_charger->master,AXP22_CHARGE_STATUS,&ret);
+	 //DBG_PSY_MSG("-!- usb_det %d\n",ret);
 	if(ret & 0x10)/*usb or usb adapter can be used*/
 		return 1;
 	else/*no usb or usb adapter*/
@@ -1487,7 +1488,7 @@ static void axp_charging_monitor(struct work_struct *work)
 	axp_charger_update(charger);
 	axp_read(charger->master, AXP22_CAP,&val);
 	charger->rest_vol	= (int)	(val & 0x7F);
-	if(axp_debug){
+	if(0){
 		DBG_PSY_MSG("charger->ic_temp = %d\n",charger->ic_temp);
 		DBG_PSY_MSG("charger->bat_temp = %d\n",charger->bat_temp);
 		DBG_PSY_MSG("charger->vbat = %d\n",charger->vbat);
