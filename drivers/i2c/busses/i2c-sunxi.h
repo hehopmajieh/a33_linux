@@ -211,7 +211,7 @@ Foscl is clock SCL;standard mode:100KHz or fast mode:400KHz
 
 /* Transfer speed. */
 
-#define SUNXI_TWI_SPEED_200K	(200000)
+#define SUNXI_TWI_SPEED_200K	(100000)
 #define SUNXI_TWI_SPEED_400K	(400000)
 #define SUNXI_TWI_SPEED(ch)	(ch == SUNXI_TP_CHAN ? SUNXI_TWI_SPEED_400K : SUNXI_TWI_SPEED_200K)
 
